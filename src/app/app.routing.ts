@@ -131,6 +131,7 @@ export const appRoutes: Route[] = [
                 ],
             },
 
+
             {
                 path: 'banner',
                 canActivate: [],
@@ -144,6 +145,131 @@ export const appRoutes: Route[] = [
                     },
                 ],
             },
+
+
+            {
+                path: 'about',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/about/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+
+
+            {
+                path: 'service',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/service/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+            {
+                path: 'thailife',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/thailife/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+
+            {
+                path: 'mobileapp',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/mobileapp/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+
+            {
+                path: 'buy',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/buy/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+
+            {
+                path: 'statistic',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/statistic/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+            {
+                path: 'where',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/where/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+            {
+                path: 'myfastcargo',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/myfastcargo/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+            {
+                path: 'reviewpage',
+                canActivate: [],
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () =>
+                            import(
+                                'app/modules/admin/administrator/reviewpage/page.Module'
+                            ).then((m) => m.Module),
+                    },
+                ],
+            },
+
 
             {
                 path: 'faq',

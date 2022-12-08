@@ -11,10 +11,75 @@ export const defaultNavigation: FuseNavigationItem[] = [
         children: [
             {
                 title: 'จัดการหน้าเว็บเพจ',
-                type: 'basic',
+                type: 'collapsable',
                 icon: 'heroicons_outline:globe-alt',
-                link: '/website/list',
+                // link: '/website/list',
+                children: [
+                    {
+                        title: 'เนื้อหา Banner',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/banner/list',
+                    }, 
+                    {
+                        title: 'About',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/about/list',
+                    },
+                    {
+                        title: 'จัดการบริการหลัก',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/service/list',
+                    },
+                    {
+                        title: 'ครองใจคนไทย',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/thailife/list',
+                    },
+                    {
+                        title: 'Mobile App',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/mobileapp/list',
+                    },
+                    {
+                        title: 'สั่งซื้อสินค้า',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/buy/list',
+                    },
+                    {
+                        title: 'สถิติ',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/statistic/list',
+                    },
+                    {
+                        title: 'แหล่งสั่งสินค้า',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/where/list',
+                    },
+                    {
+                        title: 'เราเชี่ยวชาญด้านการขนส่ง',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/myfastcargo/list',
+                    },
+                    {
+                        title: 'รีวิว',
+                        type: 'basic',
+                        icon: 'heroicons_outline:fast-forward',
+                        link: '/reviewpage/list',
+                    },
+
+                ],
             },
+
+
             {
                 title: 'ภาพแบนเนอร์',
                 type: 'basic',
